@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #4b5db9;
+}
+
+
+.navbar {
+  background-color: #89b2ec;
+}
+
+/* The above code is setting the font family, size, weight, line height, margin, and color of the name. */
+header {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2%;
+}
+
+.name {
+  font-size: 250%;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+  color: #fff;
+}
+
+li, a {
+  font-weight: 500;
+  font-size: 16px;
+  color: edf0f1;
+  text-decoration: none;
+}
+
+/* Creating a navigation bar with a hover effect. */
+.wrapper {
+  list-style: none;
+}
+
+.wrapper li {
+  display: inline-block;
+  padding: 0px 10px;
+  justify-content: flex-end;
+}
+
+.wrapper ul li a {
+  text-decoration: none;
+  font-size: 120%;
+  text-transform: uppercase;
+  margin: 0 5px;
+  color: #fff;
+  position: relative;
+}
+
+.wrapper ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s linear;
+}
+
+.wrapper ul li a:hover:after {
+  transform-origin: bottom left;
+  transform: scaleX(1)
+}
+
+.wrapper ul li a:active {
+  color: black;
+}
+
+
+/* media queries */
+@media screen and (max-width: 850px) {
+  
+}

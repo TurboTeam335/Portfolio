@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:wght@500&family=Roboto:wght@300&display=swap');
 
 * {
   /* box-sizing: border-box; */
@@ -6,9 +7,12 @@
   margin: 0;
 }
 
-
+body {
+  background-color: rgba(143, 150, 150, 0.215);
+}
 .navbar {
-  background-color: #36455b;
+  background: rgb(42,42,51);
+background: linear-gradient(107deg, rgba(42,42,51,1) 0%, rgba(54,69,91,1) 35%, rgba(75,111,189,1) 100%);
 }
 
 /* The above code is setting the font family, size, weight, line height, margin, and color of the name. */
@@ -80,10 +84,10 @@ li, a {
   color: black;
 }
 
+/* This is the CSS for the content section of the page. */
 .content {
   font-family: 'Montserrat', sans-serif;
   float: left;
-  width: 30%;
   font-size: 30px;
   display: flex;
   justify-content: space-between;
@@ -93,31 +97,67 @@ li, a {
   margin-left: 20px;
   margin-top: 20px;
   display: block;
+  
 } 
 
 .content h2 {
   float: left;
-  width: 30%;
-  font-size: 30px;
+  width: 15%;
+  font-size: 40px;
   color: #36455b;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 20px 20px;
+  display: block;
+  padding: 20px;
+  /* background-color: #719ddf; */
+  border-right: 5px solid #36455b
   
 }
+
+
 
 .content .content-info {
   float: none;
   width: 60%;
-  font-size: 16px;
+  font-size: 20px;
   margin-left: 20px;
   margin-top: 20px;
-  display: flex;
+  float: left;
 }
 
 .about-me, .work, .contact-me {
   display: flex;
   width: 200%;
 }
+
+/* Images in the work section */
+/* .img-container {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  width: 25%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.image {
+  /* width: 560px;
+  height: 425px;*/
+  display: inline-block;
+  flex-wrap: wrap; 
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+  border: solid #36455b 8px;
+  margin: 4px 4px 4px 0;
+  position: relative;
+}
+
+
 
 /* Creating a footer with a hover effect. */
 
@@ -126,6 +166,7 @@ li, a {
   display: grid;
   gap: 1rem;
   grid-auto-flow: column;
+  
 }
 
 .footer li {
@@ -163,26 +204,6 @@ li, a {
 .footer ul li a:active {
   color: black;
 }
-/* .about-me {
-  border: 1px solid red;
-  margin-bottom: 15px;
-  padding: 25px 0;
-  display: block;
-}
-.work {
-  border: 1px solid blue;
-  margin-bottom: 15px;
-  padding: 25px 0;
-  display: block
-}
-
-.contact-me {
-  border: 1px solid green;
-  margin-bottom: 15px;
-  padding: 25px 0;
-  display:block
-} */
-
 
 /* media queries */
 @media screen and (max-width: 850px) {

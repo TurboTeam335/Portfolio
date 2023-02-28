@@ -5,6 +5,7 @@
   /* box-sizing: border-box; */
   padding: 0;
   margin: 0;
+  --blue: #36455b;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 .navbar {
   background: rgb(42,42,51);
 background: linear-gradient(107deg, rgba(42,42,51,1) 0%, rgba(54,69,91,1) 35%, rgba(75,111,189,1) 100%);
+height: 80px;
 }
 
 /* The above code is setting the font family, size, weight, line height, margin, and color of the name. */
@@ -22,13 +24,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 2%;
+  
 }
 
 .name {
   font-size: 250%;
   font-weight: 300;
   line-height: 1.2;
-  margin: 10px 0;
+  margin: 10px 0 10px 25px;
   color: #fff;
   width: 50%;
 }
@@ -41,26 +44,28 @@ li, a {
 }
 
 /* Creating a navigation bar with a hover effect. */
-.wrapper {
-  list-style: none;
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
+.wrapper ul {
+  float: right;
+  margin-right: 25px;
 }
 
-.wrapper li {
+.wrapper ul li {
   display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
 }
 
 
 .wrapper ul li a {
+  position: relative;
   text-decoration: none;
   font-size: 120%;
   text-transform: uppercase;
   margin: 0 5px;
-  color: #fff;
-  position: relative;
+  color: #fff; 
+  padding: 5px o;
 }
+
 
 .wrapper ul li a:after {
   content: '';
@@ -80,10 +85,6 @@ li, a {
   transform: scaleX(1)
 }
 
-.wrapper ul li a:active {
-  color: black;
-}
-
 /* This is the CSS for the content section of the page. */
 .content {
   font-family: 'Montserrat', sans-serif;
@@ -93,31 +94,29 @@ li, a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 2%;
-  color: #36455b;
+  color: var(--blue);
   margin-left: 20px;
   margin-top: 20px;
   display: block;
   
 } 
 
-.content h2 {
+h2 {
   float: left;
   width: 15%;
   font-size: 40px;
-  color: #36455b;
+  color: var(--blue);
   margin: 20px 20px;
   display: block;
   padding: 20px;
   /* background-color: #719ddf; */
-  border-right: 5px solid #36455b
+  border-right: 5px solid var(--blue)  
   
 }
 
-
-
 .content .content-info {
   float: none;
-  width: 60%;
+  width: 75%;
   font-size: 20px;
   margin-left: 20px;
   margin-top: 20px;
@@ -130,43 +129,46 @@ li, a {
 }
 
 /* Images in the work section */
-/* .img-container {
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* flex: 0 0 100%; */
+  
+}
+
+img {
+  width: 45%;
+  height: auto;
+  border: solid var(--blue) 8px;
   display: flexbox;
   flex-wrap: wrap;
-}
-
-.image-container img {
-  width: 25%;
-  height: auto;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-.image {
-  /* width: 560px;
-  height: 425px;*/
-  display: inline-block;
-  flex-wrap: wrap; 
-  width: 50%;
-  height: auto;
-  max-width: 100%;
-  border: solid #36455b 8px;
-  margin: 4px 4px 4px 0;
   position: relative;
+  margin: 10px 4px 10px 0;
 }
 
+.tag {
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  background-color: #92AD40;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+}
 
-
-/* Creating a footer with a hover effect. */
-
+/* This is the CSS for the footer section of the page. */
 .footer {
   list-style: none;
   display: grid;
   gap: 1rem;
   grid-auto-flow: column;
-  
+  justify-content: space-evenly;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .footer li {
@@ -174,21 +176,21 @@ li, a {
 }
 
 
-.footer ul li a {
+.footer li a {
   text-decoration: none;
   font-size: 120%;
   text-transform: uppercase;
   margin: 0 5px;
-  color: #fff;
+  color: var(--blue);
   position: relative;
 }
 
-.footer ul li a:after {
+.footer li a:after {
   content: '';
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--blue);
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -196,18 +198,18 @@ li, a {
   transition: transform 0.25s linear;
 }
 
-.footer ul li a:hover:after {
+.footer li a:hover:after {
   transform-origin: bottom left;
   transform: scaleX(1)
 }
 
-.footer ul li a:active {
-  color: black;
-}
+/* media queries*/
+@media screen and (max-width: 1120px) {
+  .img-container {
+    flex-direction: column;
+  }
 
-/* media queries */
-@media screen and (max-width: 850px) {
-  .name {
-    width: 100%;
+  .img {
+    width: 25%;
   }
 }

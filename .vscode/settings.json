@@ -2,5 +2,25 @@
   "cSpell.ignoreWords": [
     "Mascali"
   ],
-  "docwriter.style": "Auto-detect"
+  "docwriter.style": "Auto-detect",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#495d7b",
+    "activityBar.background": "#495d7b",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#3c242d",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#495d7b",
+    "statusBar.background": "#36455b",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#495d7b",
+    "statusBarItem.remoteBackground": "#36455b",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#36455b",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#36455b99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#36455b"
 }

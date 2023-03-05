@@ -7,7 +7,7 @@ Welcome to my portfolio repository! This repository showcases my programming ski
 
 # Getting Started
 
-To view my portfolio, simply visit [URL of your portfolio website]. You can navigate through the site using the menu bar, which will take you to different sections such as "About Me", "Projects", and "Contact".
+To view my portfolio, simply visit https://turboteam335.github.io/Portfolio/. You can navigate through the site using the menu bar, which will take you to different sections such as "About Me", "Projects", and "Contact".
 
 # Technologies Used
 

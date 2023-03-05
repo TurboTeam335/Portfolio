@@ -48,7 +48,7 @@ li, a {
 /* Creating a navigation bar with a hover effect. */
 .wrapper ul {
   float: right;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 .wrapper ul li {
@@ -397,7 +397,7 @@ img {
     margin-left: 66px;
   }
 
-  
+
   h2 {
     text-align: center;
     width: 100%;
